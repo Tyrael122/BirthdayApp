@@ -22,10 +22,10 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import kotlinx.coroutines.delay
 import org.contoso.birthdayapp.ui.Constants
-import org.contoso.birthdayapp.ui.components.VideoPlayer
 import org.contoso.birthdayapp.ui.notification.CountdownForegroundService
 import org.contoso.birthdayapp.ui.screens.BirthdayCountdownScreen
 import org.contoso.birthdayapp.ui.screens.StartServiceScreen
+import org.contoso.birthdayapp.ui.screens.VideoPlayingScreen
 import org.contoso.birthdayapp.ui.theme.BirthdayAppTheme
 import java.time.Duration
 import java.time.LocalDateTime
@@ -81,7 +81,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
             })
         } else {
             if (hasDatePassed) {
-                VideoPlayer(modifier = Modifier.fillMaxSize())
+                VideoPlayingScreen(modifier = Modifier.fillMaxSize())
             } else {
                 BirthdayCountdownScreen(
                     targetDate = targetDate,

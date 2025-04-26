@@ -40,10 +40,14 @@ android {
 }
 
 dependencies {
-    implementation("androidx.media3:media3-exoplayer:1.3.1")
-    implementation("androidx.media3:media3-ui:1.3.1")
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
+
     // For Jetpack Compose integration:
-    implementation("androidx.media3:media3-session:1.3.1")
+    implementation(libs.androidx.media3.session)
+
+    implementation (libs.androidx.material.icons.core)
+    implementation(libs.androidx.material.icons.extended)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
