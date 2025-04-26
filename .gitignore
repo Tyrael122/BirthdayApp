@@ -19,3 +19,4 @@ mipmap*dpi/
 ic_launcher-playstore.png
 strings.xml
 *.jks
+/app/release/*
